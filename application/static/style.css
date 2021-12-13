@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&display=swap');
+
+
+span,li,label{
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    background-attachment:fixed;
+    background-image: linear-gradient(180deg, #000000 0%, rgba(0, 0, 1, 0.961418) 6.26%, rgba(2, 1, 15, 0.932284) 22%, rgba(3, 1, 20, 0.898558) 31.6%, rgba(4, 2, 26, 0.888388) 38.06%, rgba(4, 2, 29, 0.871163) 49.01%, rgba(4, 2, 29, 0.85) 63.54%, rgba(5, 2, 40, 0.87) 79.56%, rgba(5, 2, 40, 0.9) 88.54%, #070423 100%);
+}
+header{
+margin:10%;
+display: block;
+font-family: Modern Antiqua;
+font-style: normal;
+font-weight: 500;
+font-size: 60px;
+text-align: center;
+color: #FFFFFF;
+}
+
+h2{
+    font-family: Modern Antiqua;
+}
+
+.maincontainer{
+  width: 50%;
+   margin: 20px auto;
+   justify-content: center;
+background: rgba(0, 0, 0, 0.21);
+border-radius: 27px;
+padding: 20px;
+
+}
+
+.maincontainer .inputtable{
+    color: white;
+   width:300px;
+    justify-content: center;
+    text-align: right;
+    margin: auto;
+}
+
+.maincontainer .solution,.maincontainer .instructions{
+margin:20px;
+background: rgba(0, 0, 0, 0.19);
+border-radius: 18px;
+color: rgb(131, 131, 131);
+padding: 20px;
+font-family: 'Merienda';
+}
+
+label{
+    font-family: Merienda;
+}
+
+input[type='submit'], input[type='reset']{
+
+border-radius: 7px;
+
+font-family: Merienda;
+font-style: normal;
+font-weight: normal;
+font-size: 15px;
+line-height: 29px;
+padding: 5px;
+text-align: right;
+border: none;
+
+color: #FFFFFF;
+width:100%;
+    text-align: center;
+}
+
+
+input[type='submit']{
+    background-color:  #0500FF;
+    
+}
+input[type='reset']{
+    background-color: red;
+    
+}
+input[type='submit']:hover{
+    background-color: rgba(0, 0, 255, 0.584);
+}
+input[type='reset']:hover{
+    background-color: rgba(255, 0, 0, 0.549);
+}
+form input{
+    background: #C4C4C4;
+border-radius: 10px;
+padding:3px;
+margin: 5px;
+}
+
+.circleL,.circleR{
+    position: fixed;
+width:40vw;
+height: 40vw;
+border-radius: 100%;
+
+background: linear-gradient(180deg, rgba(255, 255, 255, 0) -0.9%, #E6E6E6 -0.89%, rgba(213, 213, 213, 0.76) 27.75%, rgba(147, 147, 147, 0.59) 58.48%, #444444 91.81%);
+}
+.circleL{
+    left:-25vw;
+}
+.circleR{
+    right: -25vw;
+}
+@media screen and (max-width:1200px){
+    header{
+        margin: 20%;
+    }
+    .maincontainer{
+        width: 70%;
+        padding: 20px 7px;
+    }
+    .circleL{
+        width:100vw;
+        height:200vw;
+        left:-90vw;
+        opacity: 0.4;
+    }
+    .circleR{
+        width:100vw;
+        height:100vw;
+        right: -90vw;
+        opacity: 0.4;
+    }
+}
+@media screen and (max-width:900px) {
+    .maincontainer{
+        width: 100%;
+        padding: 20px 7px;
+    }
+    .circleL{
+        width:100vw;
+        height:200vw;
+        left:-90vw;
+        opacity: 0.4;
+    }
+    .circleR{
+        width:100vw;
+        height:100vw;
+        right: -90vw;
+        opacity: 0.4;
+    }
+    
+}
+.maincontainer > a{
+    
+    color: rgba(255, 255, 255, 0.596);
+    text-decoration: none;
+}
+.hs:hover {
+    color: white;
+    box-shadow:  0 0 10px 10px rgba(128, 128, 128, 0.274);
+    
+    
+}

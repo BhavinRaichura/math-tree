@@ -1,0 +1,67 @@
+<div class="inputtable">
+    <form action="" method="POST">
+        {{ form.csrf_token }}
+        <table>
+            <tr>
+                <td>
+                    {{ form.fx.label }}
+                </td>
+                <td>
+                    {{form.fx}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{form.deci.label}}
+                </td>
+                <td>
+                    {{form.deci}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{form.a.label}}
+                </td>
+                <td>
+                    {{form.a}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{form.b.label}}
+                </td>
+                <td>
+                    {{form.b}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+                <td>
+                    <input type="submit" value="Calculate">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="instructions">
+    <h2>
+        Instruction
+    </h2>
+    <ul>
+        <li>You can write the function as x^3+4*x^2+5*x+1 or x**3+4*x**2+5*x+1</li>
+        <li>You must use a "*" sign between an integer and an "x" to define multiplication. For example 3x<sup>2</sup> <br> 3*x^2 or 3*x**2
+            Valid equation <br> 3x^2 Invalid equation</li>
+    </ul>
+</div>
+
+
+<div class="solution">
+    <h2>
+        Solution
+    </h2>
+    <hr>
+    <spam>{{solu}}</spam>
+</div>

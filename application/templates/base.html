@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Math Tree helps you to solve problems based on numerical methods.">
+    <meta name="keywords"
+        content="numerical methods, bisection method, newton raphson method, False Position Method, engineering maths">
+    <meta name="author" content="Bhavin Raichura">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script type='text/javascript'
+        src='https://platform-api.sharethis.com/js/sharethis.js#property=61213f5ffa3e6f0012f5fa49&product=inline-share-buttons'
+        async='async'></script>
+    <title>MT | {{title}}</title>
+</head>
+
+<body>
+    {% include "childTemp/nav.html" %}
+
+    <div class="circleL"></div>
+    <div class="circleR"></div>
+    
+    <header>{{title}}</header>
+
+
+    <div class="maincontainer">
+        {%if title =="Math Tree"%}
+        {% include "childTemp/home.html" %}
+        {%elif title == 'Newton Raphson Method'%}
+        {% include "childTemp/nrf.html" %}
+        {%elif title=="Bisection Method"%}
+        {% include "childTemp/bm.html" %}
+        {%elif title == "False Position Method"%}
+        {% include "childTemp/fpm.html" %}
+        {%endif%}
+    </div>
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<div class="inputtable">
+    <form action="" method="POST">
+        <table>
+            <tr>
+                <td>
+                    <label for="fx">f (x)</label>
+                </td>
+                <td>
+                    <input type="text" name="fx" id="fx" value="{{request.form.fx}}" placeholder="function"
+                        required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dfx">f ' (x)</label>
+                </td>
+                <td>
+                    <input type="text" name="dfx" id="dfx" value="{{request.form.dfx}}" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="xo">x<sub>0</sub></label>
+                </td>
+                <td>
+                    <input type="number" step=0.1 name="xo" id="xo" value="{{request.form.xo}}">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="deci">Decimal place</label>
+                </td>
+                <td>
+                    <input type="number" name="deci" id="deci" min=0 value="{{request.form.deci}}" required="required">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="reset" value="Reset">
+                </td>
+                <td>
+                    <input type="submit" value="Calculate">
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+
+<div class="instructions">
+    <h2>
+        Instruction
+    </h2>
+    <ul>
+        <li>You can write the function as x^3+4*x^2+5*x+1 or x**3+4*x**2+5*x+1</li>
+        <li>You must use a "*" sign between an integer and an "x" to define multiplication. For example 3x<sup>2</sup> <br> 3*x^2 or 3*x**2
+            Valid equation <br> 3x^2 Invalid equation</li>
+    </ul>
+</div>
+
+
+<div class="solution">
+    <h2>
+        Solution
+    </h2>
+    <hr>
+    <spam>{{solu}}</spam>
+</div>
